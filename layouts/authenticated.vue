@@ -1,0 +1,4 @@
+<template>
+  <Topbar />
+  <slot />
+</template>
