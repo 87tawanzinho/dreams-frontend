@@ -7,6 +7,7 @@ export default defineNuxtConfig({
     "@nuxt/icon",
     "nuxt-auth-utils",
     "@nuxt/fonts",
+    "nuxt-swiper",
   ],
   runtimeConfig: {
     oauth: {

@@ -1,24 +1,32 @@
 <template>
-  <div class="flex flex-col items-center justify-center h-screen">
-    <h2 class="text-3xl">Investindo em Sonhos</h2>
-    <a href="/auth/google" class="">
+  <TopBannerForLogin>
+    <div class="flex flex-col items-center justify-center">
+      <img src="/logo.png" alt="" />
+      <a href="/auth/google" class="mt-12">
+        <button
+          class="bg-white text-black rounded-lg px-8 py-2 hover:opacity-60 transition-all flex justify-center items-center gap-2 secundary"
+        >
+          <Icon name="mdi:google" />
+          Login com o Google
+        </button>
+      </a>
+      <p class="mt-4">Ou</p>
       <button
-        class="mt-12 bg-white text-black rounded-lg px-8 py-2 hover:opacity-60 transition-all flex justify-center items-center gap-2 secundary"
+        class="mt-4 bg-white text-black rounded-lg px-8 py-2 hover:opacity-60 transition-all flex justify-center items-center gap-2 secundary"
       >
-        <Icon name="mdi:google" />
-        Login com o Google
+        <Icon name="mdi:email" />
+        Login com o E-mail
       </button>
-    </a>
-    <p class="mt-4">Ou</p>
-    <button
-      class="mt-4 bg-white text-black rounded-lg px-8 py-2 hover:opacity-60 transition-all flex justify-center items-center gap-2 secundary"
-    >
-      <Icon name="mdi:email" />
-      Login com o E-mail
-    </button>
-  </div>
+    </div>
+  </TopBannerForLogin>
 </template>
 
 <style></style>
 
-<script setup></script>
+<script setup>
+import TopBannerForLogin from "~/layouts/topBannerForLogin.vue";
+
+definePageMeta({
+  layout: "footer-login",
+});
+</script>

@@ -10,7 +10,7 @@
 <style>
 body {
   font-family: "Inter";
-  background-color: #000000;
+  background-color: #090f0b;
   color: rgb(253, 252, 252);
 }
 
